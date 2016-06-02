@@ -12,6 +12,12 @@ exports.summary = function(req, res){
 exports.product = function(req, res){
   res.render('./zh/product');
 };
+exports.sofa = function(req, res){
+  res.render('./zh/sofa');
+};
+exports.scarf = function(req, res){
+  res.render('./zh/scarf');
+};
 exports.contact = function(req, res){
   res.render('./zh/contact');
 };

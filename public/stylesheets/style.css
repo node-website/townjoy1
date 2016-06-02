@@ -52,9 +52,9 @@ a:hover{color:#00f;}
 .u-pointer-rt{right:10px;left:auto;}
 
 /* 单片式幻灯-默认淡入淡出  */
-.m-slide{position:relative;margin-top:10px;width:920px;height:250px;overflow:hidden;}
+.m-slide{position:relative;margin-top:10px;width:920px;height:260px;overflow:hidden;}
 .m-slide ol,.m-slide li{position:absolute;top:0;left:0;width:100%;height:100%;z-index:20;}
-.m-slide li{opacity:0;-webkit-transition:0.5s ease-out;-moz-transition:0.5s ease-out;-ms-transition:0.5s ease-out;transition:0.5s ease-out;-webkit-transition-property:opacity,left,top;-moz-transition-property:opacity,left,top;-ms-transition-property:opacity,left,top;transition-property:opacity,left,top;}
+.m-slide li{opacity:0;-webkit-transition:opacity 0.8s ease-out;-moz-transition:opacity 0.8s ease-out;-ms-transition:opacity 0.8s ease-out;transition:opacity 0.8s ease-out;}
 .m-slide li.z-crt{z-index:21;opacity:1;}
 /* 水平滚动 */
 .m-slide-x li{left:-100%;}
@@ -96,6 +96,9 @@ a:hover{color:#00f;}
 .g-mn .main .mainbox h4{font-size:14px;font-weight:bold;line-height:26px;}
 .g-mn .main .mainbox .ucon{padding: 30px 30px;}
 .g-mn .main .mainbox .con{font-size:20px;line-height:40px;color:#000;}
+.g-mn .main .mainbox div{float:left; margin: 10px;}
+.g-mn .main .mainbox img{width:200px;height: 150px}
+.g-mn .main .mainbox h4{display: block;width:200px;}
 .g-mn .main .img{float:left;width:120px;height:120px;padding:5px;}
 .g-mn .main .txt{margin-left:140px;}
 .g-mn .main p{line-height:35px;font-size:1.5em;}
