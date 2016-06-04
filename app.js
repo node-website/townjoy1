@@ -12,7 +12,7 @@ var express = require('express')
 var app = express();
 
 // all environments
-app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 80);
 app.set('views', path.join(__dirname, '/views'));
 
 app.set('view engine', 'html');
@@ -35,6 +35,7 @@ app.get('/zh/summary', routes.summary);
 app.get('/zh/product', routes.product);
 app.get('/zh/sofa', routes.sofa);
 app.get('/zh/scarf', routes.scarf);
+app.get('/zh/quilt', routes.quilt);
 app.get('/zh/contact', routes.contact);
 
 var server = http.createServer(app).listen(app.get('port'),function () {

@@ -18,6 +18,9 @@ exports.sofa = function(req, res){
 exports.scarf = function(req, res){
   res.render('./zh/scarf');
 };
+exports.quilt = function(req, res){
+  res.render('./zh/quilt');
+};
 exports.contact = function(req, res){
   res.render('./zh/contact');
 };

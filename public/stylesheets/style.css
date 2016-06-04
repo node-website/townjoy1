@@ -23,19 +23,22 @@ a:hover{color:#00f;}
 /* function */
 .f-cb:after,.f-cbli li:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
 .f-cb,.f-cbli li{zoom:1;}
+.f-fl{float: left;}
+.f-fr{float: right;}
 
 .g-hd, .g-bd, .g-ft{margin:0 auto;width:920px;}
 .g-sd{float:left;width:200px;}
 .g-mn{float:right;width:700px;}
-.g-ft{margin-top:30px;margin-bottom:30px;text-align:center;line-height:30px;}
+.g-ft{margin-top:30px;margin-bottom:30px;}
 
 
 /* logo和语言切换 */
-.m-contact{padding-top:15px;}
-.m-contact .name{float:left;margin-left:-26px;}
-.m-contact .phone{float:right;margin-top:30px;}
-.m-contact .img{float:left;margin-right: 10px;}
-.m-contact .txt{float:left;font-family:Arial;font-size:25px;font-weight:bold;color:red;}
+.m-logo{padding-top:15px;height: 45px;}
+.m-logo .logo{}
+.m-logo .logo img{display:inline-block;vertical-align:middle;width: 40px;height: 40px;}
+.m-logo .logo span{display:inline-block;vertical-align:middle;maigin-left:10px;line-height: 40px;font-size: 30px;color:#10a0ed;}
+.m-logo .language{float:right;}
+.m-logo .language a{font-family:Arial;font-size:14px;color:#10a0ed;line-height: 40px;}
 
 
 /* 头部导航 */
@@ -101,15 +104,13 @@ a:hover{color:#00f;}
 .g-mn .scene li img{width:200px;height: 200px;}
 
 
-.g-mn .main{margin-top:20px;width:698px;border:solid 1px #ddd;font-size: 14px;}
-.g-mn .main .mainbox{min-height:472px;line-height:18px;padding:10px 8px;}
-.g-mn .main .mainbox .catnav{font-size:20px;font-weight:bold;line-height:40px;color:#000;}
-.g-mn .main .mainbox h4{font-size:14px;font-weight:bold;line-height:26px;}
-.g-mn .main .mainbox .ucon{padding: 30px 30px;}
-.g-mn .main .mainbox .con{font-size:20px;line-height:40px;color:#000;}
+.g-mn .main{margin-top:20px;width:698px;border:solid 1px #ddd;font-size: 14px;line-height:28px;}
+.g-mn .main .mainbox{min-height:472px;padding:10px}
+.g-mn .main .mainbox h4{display: block;width:200px;font-size:14px;font-weight:bold;line-height:26px;}
 .g-mn .main .mainbox div{float:left; margin: 10px;}
 .g-mn .main .mainbox img{width:200px;height: 150px}
-.g-mn .main .mainbox h4{display: block;width:200px;}
-.g-mn .main .img{float:left;width:120px;height:120px;padding:5px;}
-.g-mn .main .txt{margin-left:140px;}
-.g-mn .main p{line-height:35px;font-size:1.5em;}
+.g-mn .main .mainbox .img{float:left;padding:5px 10px 5px 5px;}
+.g-mn .main .mainbox .img img{width:150px;height:150px;}
+.g-mn .main .mainbox p{text-indent:2em;}
+
+.m-ft{text-align:center;line-height:30px;font-size: 14px;}
