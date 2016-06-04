@@ -37,18 +37,38 @@
     }).trigger("mouseleave");
 })();
 
-
-// 滑动图
+/*
+// 轮播图
 (function(){
-    function MarqueeL(){
-        if(_elist.scrollLeft > 1540)
-            _elist.scrollLeft = 0;
-        else
-            _elist.scrollLeft += 1;
-    }
-    var _elist = document.getElementById('picbox');
-    if (_elist) {
-        setInterval(MarqueeL, 50);
-    }
+    var adTimer;
+    var len = $(".slider > li").length;
+    var _width = $(".m-banner .slider > li:first").width();
 
+    //滑入停止动画，滑出开始动画.
+    $(".picbox").hover(function() {
+        clearInterval(adTimer);
+    }, function() {
+        adTimer = setInterval(function() {
+            moveLeft();
+        }, 3000);
+    }).trigger("mouseleave");
+
+
+    function moveLeft() {
+        $(".picbox ul").stop(true, false).animate({
+                "marginLeft": -_width*(idx+1) + "px"
+            }, 500, "linear", function(){
+                if (idx==len-2){
+                    var _first  = $(".picbox ul > li:first");
+                    _first.clone().insertAfter($(".picbox ul > li:last"));
+                    _first.remove();
+                    $(".picbox ul").css("margin-left", -_width*idx+"px");
+                } else {
+                    idx++;
+                }
+            }
+        );
+    }
 })();
+
+ */
